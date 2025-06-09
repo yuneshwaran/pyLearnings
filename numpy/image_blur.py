@@ -1,7 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = plt.imread('image.jpg')
+#img = plt.imread(r'C:\Users\UTIS LAPTOP 449\Documents\Projects\pyLearnings\numpy\image.jpg')
+
+img = plt.imread('files_assets/image.jpg')
 
 if img.ndim == 3:
     img = img.mean(axis=2) 
@@ -19,7 +21,9 @@ def blur(img):
 
 res = 0
 i = 1
-while i<50:
+
+#blurring loop 50 times
+while i<20:
     if i<=1:
         res = blur(img)
         i+=1
