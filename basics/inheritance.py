@@ -10,10 +10,14 @@ class Item:
         self.model = str(model)
         self.price = float(price)
         self.quantity = quantity
-        
+         
     #repr to print the object on print call
     def __repr__(self):
         return f"model:'{self.model}',price:{self.price},quantity:{self.quantity}"
+    
+    @property
+    def read_only (self):
+        print("Hello")
 
 class Laptop(Item):
 
@@ -42,9 +46,6 @@ class Laptop(Item):
             )
 
 #print(Laptop.AllLaptops)
-Laptop.load_from_csv()
-l1 = Laptop('Lenovo',100,100)
+# Laptop.load_from_csv()
+# l1 = Laptop('Lenovo',100,100)
 #print(l1)
-
-
-

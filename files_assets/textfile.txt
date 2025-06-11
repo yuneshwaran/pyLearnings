@@ -1,0 +1,6 @@
+This is a text file
+Vanilla is better than chocolate
+new line 
+another new line 
+
+end
